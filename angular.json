@@ -16,8 +16,13 @@
             "polyfills": "apps/aluno/src/polyfills.ts",
             "tsConfig": "apps/aluno/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/aluno/src/favicon.ico", "apps/aluno/src/assets"],
-            "styles": ["apps/aluno/src/styles.scss"],
+            "assets": [
+              "apps/aluno/src/favicon.ico",
+              "apps/aluno/src/assets"
+            ],
+            "styles": [
+              "apps/aluno/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -78,7 +83,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/aluno"],
+          "outputs": [
+            "coverage/apps/aluno"
+          ],
           "options": {
             "jestConfig": "apps/aluno/jest.config.js",
             "passWithNoTests": true
@@ -107,7 +114,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/aluno-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/aluno-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }
@@ -127,8 +136,13 @@
             "polyfills": "apps/admin/src/polyfills.ts",
             "tsConfig": "apps/admin/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/admin/src/favicon.ico", "apps/admin/src/assets"],
-            "styles": ["apps/admin/src/styles.scss"],
+            "assets": [
+              "apps/admin/src/favicon.ico",
+              "apps/admin/src/assets"
+            ],
+            "styles": [
+              "apps/admin/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -189,7 +203,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/admin"],
+          "outputs": [
+            "coverage/apps/admin"
+          ],
           "options": {
             "jestConfig": "apps/admin/jest.config.js",
             "passWithNoTests": true
@@ -218,7 +234,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/admin-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/admin-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }
@@ -232,12 +250,17 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["libs/ui/src/**/*.ts", "libs/ui/src/**/*.html"]
+            "lintFilePatterns": [
+              "libs/ui/src/**/*.ts",
+              "libs/ui/src/**/*.html"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/ui"],
+          "outputs": [
+            "coverage/libs/ui"
+          ],
           "options": {
             "jestConfig": "libs/ui/jest.config.js",
             "passWithNoTests": true
@@ -247,7 +270,8 @@
     }
   },
   "cli": {
-    "defaultCollection": "@nrwl/angular"
+    "defaultCollection": "@nrwl/angular",
+    "analytics": "25327fbe-01e4-4425-9345-55df9c8493bb"
   },
   "schematics": {
     "@nrwl/angular": {
